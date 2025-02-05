@@ -1,0 +1,25 @@
+[From: Doctor Higgins, PhD]
+
+I've reviewed your research paper, and I must be direct—it is far too short and lacks the depth and rigor expected at this level. A strong research paper must provide a comprehensive review of relevant literature, a well-documented methodology, detailed analysis, and a thorough discussion of findings. Currently, your manuscript falls short in several critical areas.  
+
+### Areas that require immediate improvement:  
+
+1. **Literature Review** – Your discussion of prior work is too brief. A research paper should engage more deeply with existing studies, critically analyzing them and clearly positioning your work within the academic discourse. Expand this section to demonstrate a well-rounded understanding of the field.  
+
+2. **Methodology** – The current description of your methodology is too superficial. It needs to be detailed enough for replication, explaining the rationale behind your choices and any limitations. Provide a clear, step-by-step account of your experimental design, data collection, and analysis process.  
+
+3. **Results and Discussion** – The presentation of results is insufficiently detailed, and the discussion lacks depth. You must thoroughly analyze your findings, compare them with existing research, and explore their implications. Simply stating results is not enough—critical interpretation is essential.  
+
+4. **Conclusions and Contributions** – The paper does not clearly articulate its significance. You need to explicitly state how your research advances the field and what practical or theoretical implications it holds. This section should leave the reader with a strong understanding of your work’s impact.  
+
+As it stands, the paper reads more like a preliminary draft than a publishable research paper. It requires substantial revision to meet academic standards. You must address all of these issues thoroughly in your next revision.  
+
+I expect your revised manuscript, fully addressing these concerns, as soon as possible in your next reply. 
+
+
+return your answer as a JSON object:
+```
+{
+    "final_draft": string,
+}
+```

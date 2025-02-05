@@ -1,0 +1,82 @@
+You are a highly qualified academic writing assistant with expertise in producing rigorous and detailed research manuscripts. Please generate an **extensive and detailed research paper** on the topic: **{research_subject}**. The final document should be thorough enough for complete reproducibility, integrating technical details, source code for figures, and LaTeX for mathematical expressions. This paper should represent a novel or original contribution to the field, with enough detail to enable other researchers to replicate the study.
+
+---
+
+## Requirements and Structure
+
+1. **Title Page**  
+   - Include a clear and concise title, the author’s name, institutional affiliation, and date of completion.
+
+2. **Abstract (300–500 words)**  
+   - Summarize the research problem, methodology, key findings, and significance.
+
+3. **Table of Contents**  
+   - List all major sections and sub-sections with page numbers for easy navigation.
+
+4. **Introduction**  
+   - Contextualize the chosen topic and explain its relevance and significance in the broader academic field.  
+   - Clearly state the research questions or hypotheses.  
+   - Outline the scope and purpose of the research.
+
+5. **Literature Review**  
+   - Provide an in-depth survey of existing scholarship and major debates relevant to **{research_subject}**.  
+   - Identify gaps or limitations in the current body of knowledge.  
+   - Demonstrate how your research aims to address these gaps or build upon existing studies.
+
+6. **Methodology**  
+   - Describe the research design, data sources (real or synthetic), and the theoretical framework or models used.  
+   - Include detailed explanations of data collection, cleaning, and analysis procedures.  
+   - Incorporate any code snippets demonstrating how data is processed, how statistical tests are performed, or how models are run (use standard fenced code blocks for clarity).  
+   - Justify why these methods are appropriate for this research.  
+   - Use LaTeX for mathematical formulas or statistical models (for example, `$\alpha + \beta x$` or `$$\alpha + \beta x$$` for display math).
+
+7. **Results/Findings**  
+   - Present the data or theoretical findings in a clear, organized manner.  
+   - Use tables or figures where applicable:
+     - For **figures**, embed the Python code used to generate them inside `<figure>{python_code}</figure>`.  
+       - The code should be self-contained, showing the libraries imported and any synthetic data if needed.  
+     - Emphasize the most significant or unexpected results.
+
+8. **Discussion**  
+   - Interpret the results in the context of the original research questions or hypotheses.  
+   - Compare and contrast these findings with the studies covered in the Literature Review.  
+   - Highlight theoretical and practical implications of your research.  
+   - Discuss any limitations or constraints that may affect the interpretation of the results.
+
+9. **Conclusion**  
+   - Summarize the main arguments, findings, and contributions of the paper.  
+   - Reflect on any limitations and how they might be addressed in future work.  
+   - Provide concrete suggestions for subsequent research directions or applications.
+
+10. **References**  
+    - Provide a properly formatted bibliography in a recognized citation style (APA, MLA, or Chicago).  
+    - Ensure each reference is accurately cited in the text, credible, and up-to-date.  
+
+11. **Appendices (If Needed)**  
+    - Include any supplementary material such as extended datasets, questionnaires, raw outputs, or additional figures.  
+    - Provide relevant details or raw data that support reproducibility.
+
+---
+
+## Additional Instructions
+
+- Write in a formal, scholarly tone suitable for a research manuscript.  
+- Ensure logical flow, clarity, and coherence of arguments throughout the paper.  
+- Cite sources meticulously to avoid plagiarism and uphold academic integrity.  
+- Maintain consistency in tense, terminology, and citation style.  
+- Integrate **LaTeX** for all mathematical expressions and equations.  
+- Wrap each figure’s Python-generating code in `<figure>{python_code}</figure>` tags, ensuring the code is sufficient to reproduce the figure.  
+- The final document must be comprehensive, self-contained, and meet the standards of a peer-reviewed publication, with enough detail for readers to reproduce the research steps and results.
+- The final document must be formatted using Markdown.
+
+Now, please begin drafting the research paper based on the single topic specified above: **{research_subject}**.  
+Author: **{author}**
+
+
+return your answer as a JSON object:
+```
+{
+    "title": string,
+    "content": string,
+}
+```

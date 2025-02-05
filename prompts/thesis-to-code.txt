@@ -1,0 +1,19 @@
+Generate the thesis's python code & related files for its github repository.
+{instructions}
+
+----
+
+{thesis}
+
+return your answer as a JSON object:
+```
+{
+    "github-repo-name": string,
+    "files": [
+        {
+            "filename": string,
+            "content": string
+        }
+    ],
+}
+```

@@ -1,0 +1,9 @@
+Suggest a detailed PhD thesis tile & subtitle. The subject is {idea}
+
+return your answer as a JSON object:
+```
+{
+    "title": string,
+    "subtitle": string
+}
+```

@@ -1,0 +1,15 @@
+Write the research paper's python code & related files for its github repository.
+{instructions}
+
+return your answer as a JSON object:
+```
+{
+    "github-repo-name": string,
+    "files": [
+        {
+            "filename": string,
+            "content": string
+        }
+    ],
+}
+```

@@ -1,0 +1,136 @@
+You are a highly qualified academic writing assistant with expertise in crafting doctoral-level research. Please generate an extensive and detailed PhD thesis on the topic: **{thesis_subject}**. The final document should be thorough enough for complete reproducibility, integrating technical details, source code for figures, and LaTeX for mathematical expressions.
+
+---
+
+## Requirements and Structure
+
+1. **Title Page**  
+   - Include a clear and concise title, the author’s name, institution, and date of completion.
+
+2. **Abstract (300–500 words)**  
+   - Summarize the research problem, methodology, key findings, and significance.
+
+3. **Table of Contents**  
+   - List all major sections and sub-sections with page numbers for easy navigation.
+
+4. **Introduction**  
+   - Contextualize the chosen topic and explain its importance in the broader academic field.  
+   - Clearly state the research questions or hypotheses.  
+   - Outline the scope and purpose of the research.
+
+5. **Literature Review**  
+   - Provide an in-depth survey of existing scholarship and major debates relevant to the chosen topic.  
+   - Identify gaps or limitations in the current body of knowledge.  
+   - Show how your research aims to address these gaps.
+
+6. **Methodology**  
+   - Describe the research design, data sources (real or synthetic), and the theoretical framework.  
+   - Include detailed explanations of data collection, cleaning, and analysis procedures.  
+   - Incorporate any code snippets demonstrating how data is processed or models are run (use standard fenced code blocks for clarity).  
+   - Justify why these methods are appropriate for this research.  
+   - Use LaTeX for mathematical formulas or statistical models (e.g., `$\alpha + \beta x$` or `$$\alpha + \beta x$$` for display math).
+
+7. **Results/Findings**  
+   - Present the data or theoretical findings in a clear, organized manner.  
+   - Use tables or figures where applicable:
+     - For **figures**, embed the Python code used to generate them inside `<figure>{python_code}</figure>`.  
+       - The code should be self-contained, showing the libraries imported and any synthetic data if needed.  
+     - Emphasize the most significant or surprising results.
+
+8. **Discussion**  
+   - Interpret the results in the context of the original research questions or hypotheses.  
+   - Compare and contrast these findings with the studies covered in the Literature Review.  
+   - Highlight theoretical and practical implications of your research.
+
+9. **Conclusion**  
+   - Summarize the main arguments, findings, and contributions.  
+   - Reflect on any limitations and how they might be addressed in future work.  
+   - Provide concrete suggestions for subsequent research directions.
+
+10. **References**  
+    - Provide a properly formatted bibliography in a recognized citation style (APA, MLA, or Chicago).  
+    - Ensure each reference is accurately cited in the text, credible, and up-to-date.  
+
+11. **Appendices (If Needed)**  
+    - Include any supplementary material such as extended datasets, questionnaires, raw outputs, or additional figures.
+
+---
+
+## Additional Instructions
+
+- Write in a formal, scholarly tone appropriate for a doctoral dissertation.  
+- Ensure logical flow and clarity of arguments throughout the thesis.  
+- Cite sources meticulously to avoid plagiarism and maintain academic integrity.  
+- Maintain consistency in tense, terminology, and citation style.  
+- Integrate **LaTeX** for all mathematical expressions and equations.  
+- Wrap each figure’s Python-generating code in `<figure>{python_code}</figure>` tags, ensuring the code is sufficient to reproduce the figure.  
+- The final document must be comprehensive, self-contained, and meet the standards of a PhD-level dissertation, with enough detail for readers to reproduce the research steps and results.
+
+Now, please begin drafting the PhD thesis based on the single topic specified above: **{thesis_subject}**.
+Author: {author}
+
+return your answer as a JSON object:
+```
+{
+    "title": "string",
+    "subtitle": "string",
+    "author": "string",
+    "institution": "string",
+    "date": "string",
+    "abstract": "string",
+    "table_of_contents": [
+        {
+            "section_title": "string",
+            "page_number": "string or number"
+        }
+        // more sections as needed
+    ],
+    "introduction": "string (include any LaTeX as needed)",
+    "literature_review": "string (include thorough references to existing work)",
+    "methodology": {
+        "text": "string (detailed description of methods, use LaTeX for formulas)",
+        "code_snippets": [
+            {
+                "description": "brief explanation of what this code does",
+                "code": "string (fenced code block or inline, whichever is clearer)"
+            }
+            // more snippets as needed
+        ]
+    },
+    "results_findings": {
+        "text": "string (explanation of results, with relevant LaTeX for equations)",
+        "figures": [
+            {
+                "figure_label": "string (e.g., Figure 1)",
+                "figure_caption": "string",
+                "python_code": "<figure>import matplotlib.pyplot as plt\n# Example plotting code...</figure>"
+            }
+            // more figures as needed
+        ]
+    },
+    "discussion": "string (interpret the results in context, compare with literature review)",
+    "conclusion": "string (summarize main arguments, mention limitations, future work)",
+    "references": [
+        {
+            "citation_style": "string (e.g., APA, MLA, or Chicago)",
+            "reference_text": "string (properly formatted reference)"
+        }
+        // more references as needed
+    ],
+    "appendices": [
+        {
+            "title": "string (e.g., Appendix A: Survey Questionnaire)",
+            "content": "string (additional details, data, or extended tables)",
+            "figures": [
+                {
+                    "figure_label": "string",
+                    "figure_caption": "string",
+                    "python_code": "<figure>...</figure>"
+                }
+                // more figures as needed
+            ]
+        }
+        // more appendices if needed
+    ]
+}
+```
